@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Calculator Love</h1>
+        <p id="question"></p>
+        <div class="buttons-container">
+            <button onclick="answerQuestion(true)">Yes</button>
+            <button onclick="answerQuestion(false)">No</button>
+        </div>
+        <div class="heart" id="heart"></div>
+        <p id="result"></p>
+    </div>
+    <div class="popup" id="popup">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
