@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Bousaaaaaaaaaaaaaaaaaa!!</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <audio id="backgroundMusic" src="background-music.mp3" autoplay loop></audio>
+    </div>
+
+    <script>
+        // Play the music automatically when the page loads
+        window.onload = function () {
+            const music = document.getElementById('backgroundMusic');
+            music.play().catch(error => {
+                console.log("Playback failed: ", error);
+                // You can handle errors here if needed
+            });
+        };
+    </script>
+</body>
+
+</html>
